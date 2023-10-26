@@ -1,0 +1,752 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+     .navigation{
+
+
+     }
+     .navigation ul{
+       list-style: none;
+       
+       
+     }
+     .navigation ul li{
+       float: left;
+       position: relative;
+     }
+     .navigation ul li a {
+       text-decoration: none;
+       color: #000;
+       padding: 10px 20px;
+       font-weight: 600;
+     }
+     .navigation ul li ul{
+       position: absolute;
+       top: 99999px;
+       z-index: 10;
+     }
+     .navigation ul li:hover ul{top: 30px;}
+     .navigation ul li ul li {
+       width: 180px;
+       background-color: #F1F1F1;
+       margin-left: -11px;
+       padding: 7px 0px;
+       border-bottom: 1px solid #F1F1C2;
+       transition: all 0.5s;
+     }
+     .navigation ul li ul li a{}
+     .navigation ul li ul li:hover{
+       padding: 7px 0px 7px 5px;
+       background-color: white;
+       color: black;
+       transition:all 0.5s;
+     }
+     
+     .logo{}
+     .logo img{}
+     
+     
+     
+     
+     
+     
+     
+     .banner_section{}
+     
+     .left-content{
+       background-image: url(../img/top-left-bg.jpg);
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       width: 100%;
+       height: 100%;
+     }
+     .inner-content {
+       display: inline-block;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       text-align: center;
+     }
+     .inner-content h2 {
+       font-size: 40px;
+       font-family: 'poppins',sans-serif;
+     }
+     .inner-content h6 {
+       letter-spacing: 2px;
+     }
+     .button-reservation {
+       text-align: center;
+     }
+     .button-reservation a {
+       color: #FB6356;
+       font-weight: 600;
+     }
+     .menu-carousel-item{
+       display: flex;
+       flex-wrap: wrap;
+     }
+     .carousel_item{
+       max-width: 240px;
+       max-height: 400px;
+     }
+     .carousel_item img{
+       
+     }
+     .section-about{
+       margin: 100px 0px;
+     }
+     
+     .section-heading{
+     
+     }
+     .section-heading h5{
+       color: #FB6356;
+       text-transform: uppercase;
+     }
+     .section-heading h2 {
+       color: black;
+       font-family: 'Poppins', sans-serif;
+       font-weight: 900;
+       margin: 25px 0px;
+       font-size: 30px;
+       
+     }
+     .about-left-text-content p{
+       font-family: 'poppins', sans-serif;
+       font-size: 14px;
+       line-height: 26px;
+     }
+     
+     .about-left-text-content-img {
+       margin: 25px 0px 0px 0px;
+     }
+     .about-right-content {
+       margin-left: 30px;
+       position: relative;
+     }
+     .about-right-content img {
+       
+     }
+     .about-right-content i {
+       font-size: 70px;
+       color: #FB5849;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-100%, -50%);
+     }
+     
+     .about-right-content i:hover{
+       transition: all 0.3s;
+       opacity: 1;
+     }
+     
+     .menu-section {
+       background-color: #FFFAFA;
+       font-family: 'poppins', sans-serif;
+       padding: 100px 0px;
+     }
+     .menu-carousel-item{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+     }
+     .carousel_item {
+       position: relative;
+       border-radius: 3px;
+     }
+     .carousel_item img{
+       border-radius: 3px;
+     }
+     .price {
+       position: absolute;
+       top: 0;
+       background: #FB5849;
+       width: 70px;
+       height: 70px;
+       font-weight: 700;
+       color: white;
+       font-size: 20px;
+       text-align: center;
+       border-radius: 3px;
+       line-height: 70px;
+     }
+     .carousel-item-description {
+       position: absolute;
+       bottom: 0;
+       background: #FB5849;
+       color: #fff;
+       padding: 30px 20px;
+       transform: translateY(25%)translateY(120px)translateZ(0);
+       transition: transform 0.5s ease-out;
+     }
+     .carousel_item:hover .carousel-item-description{transform: translateY(-60%)translateY(120px)translateZ(0);transition:transform 0.5s ease-out;}
+     .carousel-item-description p{}
+     
+     .section-chef {
+       margin: 100px 0px;
+     }
+     .section-heading-chef {
+       font-family: 'poppins',sans-serif;
+       padding: 0px 0px 50px 0px;
+     }
+     .section-heading-chef h6{
+       color: #FB5849;
+     }
+     .section-heading-chef h2{}
+     
+     
+     .section-about-chef {
+       border: 1px solid #afafaf;
+       border-radius: 3px;
+     }
+     .section-about-chef:hover{
+       border-color: #FB6356;
+     }
+     .image-chef{
+       position: relative;
+     }
+     .image-chef img{}
+     .chef-social-media {
+       background-color: #2a2a2a;
+       position: absolute;
+       opacity: 0;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       border-radius: 3px;
+       visibility: hidden;
+       transition: all 0.5s;
+     }
+     .chef-social-media-icon {
+       display: inline-block;
+       position: absolute;
+       top: 45%;
+       left: 30%;
+     }
+     .chef-social-media-icon a {
+       background: white;
+       display: inline-block;
+       width: 40px;
+       height: 40px;
+       text-align: center;
+       border-radius: 50%;
+       line-height: 35px;
+       color: #000;
+       transition: all 0.5s;
+       margin: 3px;
+     }
+     .chef-social-media-icon a:hover{
+       background: #FB5849;
+       transition: all 0.5s;
+     }
+     .chef-social-media-icon i{}
+     .section-about-chef:hover .chef-social-media{
+       visibility: visible;
+       opacity: 0.9;
+       transition: all 0.5s;
+     }
+     .des-chef{
+       font-family: 'poppins', sans-serif;
+     }
+     .des-chef h5{
+       color: black;
+     }
+     .des-chef p{}
+     .section-about-chef:hover .des-chef h5{
+       color: #FB5849;
+     }
+     .section-contact {
+       background-image: url('../img/reservation-bg.jpg');
+       padding: 100px 0px;
+     }
+     .left-content-contact{
+       font-family: 'poppins', sans-serif;
+     }
+     .left-content-contact h6{
+       color: white;
+       text-transform: uppercase;
+     }
+     .left-content-contact h2 {
+       color: white;
+       font-weight: 700;
+     
+     }
+     .left-content-contact p{
+         color: white;
+         font-size: 14px;
+        
+     }
+     .phn-no {
+       font-family: 'poppins', sans-serif;
+       background-color: white;
+       padding: 60px 20px 20px 20px;
+       border-radius: 3px;
+       position: relative;
+       text-align: center;
+     }
+     .icon {
+       width: 70px;
+       height: 70px;
+       background: #FB5849;
+       text-align: center;
+       border-radius: 35px;
+       position: absolute;
+       left: 37%;
+       top: -15%;
+     }
+     .icon i {
+       color: white;
+       display: inline-block;
+       padding-top: 23%;
+       font-size: 20px;
+     }
+     .phn-no h6 {
+       color: black;
+       font-size: 20px;
+       font-weight: 700;
+     }.phn-no p {
+       color: black;
+       margin: 0;
+     }
+     
+     .email-id{
+       font-family: 'poppins', sans-serif;
+       background-color: white;
+       padding: 60px 20px 20px 20px;
+       border-radius: 3px;
+       position: relative;
+       text-align: center;
+     }
+     .email-id i{
+       color: white;
+     }
+     .email-id h6{
+       color: black;
+       font-size: 20px;
+       font-weight: 700;
+     }
+     .email-id p{
+       color: black;
+       margin: 0;
+     }
+     
+     .section-reservation {
+       background-color: white;
+     }
+     .section-reservation {
+         padding: 50px 30px;
+         border-radius: 10px;
+         margin-left: 30px;
+     }
+     .reserve_btn {
+         background: #FB5849;
+         font-size: 14px;
+         font-weight: bold;
+         color: white;
+         padding: 10px 0px;
+     }
+     .textarea_input {
+         border: 1px solid #ddd;
+         border-radius: 3px;
+     }
+     .textarea_input:focus{
+         outline: none !important;
+         border-color: #FB5849;
+     }
+     .section-meal {
+         background-color: #FFFFFF;
+         margin-bottom: 100px;
+     }
+     .section-heading-meal {
+         text-align: center;
+         font-family: 'poppins',sans-serif;
+     }
+     .section-heading-meal h6 {
+       color: #FB5849;
+       font-weight: 600;
+       letter-spacing: 5px;
+     }
+     .section-heading-meal h2 {
+       font-weight: bold;
+     }
+     .meal-classification {
+         margin-left: 22%;
+         margin-top: 100px;
+         margin-bottom: 50px;
+         display: inline-block;
+     }
+     .meal-classification ul{}
+     .meal-classification ul li {
+       float: left;
+       display: inline-block;
+       margin: 0px 15px;
+     }
+     .meal-classification ul li a {
+       display: inline-block;
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 600;
+       color: #FB5849;
+       text-align: center;
+     }
+     .meal-classification ul li a img{
+       display: block;
+     }
+     .left-content-meal{
+       font-family: 'poppins', sans-serif;
+     }
+     .meal-item {
+       position: relative;
+       margin-bottom: 50px;
+     }
+     .meal-item img {
+       float: left;
+       margin-right: 15px;
+       border-radius: 5px;
+     }
+     .meal-item h4 {
+       display: inline-block;
+       color: #000;
+       font-weight: 700;
+       font-size: 20px;
+       margin-bottom: 10px;
+       margin-top: 10px;
+     }
+     .left-content-meal .meal-item p {
+       font-size: 14px;
+     }
+     .left-content-meal{
+       font-family: 'poppins', sans-serif;
+       margin-right: 15px;
+     }
+     
+     .meal-item-price {
+         position: absolute;
+         top: 15px;
+         background: #FB5849;
+         width: 70px;
+         height: 70px;
+         font-weight: 700;
+         color: white;
+         font-size: 20px;
+         text-align: center;
+         border-radius: 3px;
+         line-height: 70px;
+         right: 0;
+     }
+     
+     .right-content-meal{
+       font-family: 'poppins', sans-serif;
+       margin-left: 15px;
+     }
+     .right-content-meal .meal-item p {
+       font-size: 14px;
+     }
+     
+     .section-footer {
+         background: #FB5849;
+         padding: 50px 0px;
+     }
+     .left-content-footer{}
+     .left-content-footer ul{
+       list-style: none;
+       display: inline;
+     
+     }
+     .left-content-footer ul li {
+       float: left;
+       width: 48px;
+       height: 48px;
+       background-color: white;
+       border-radius: 24px;
+       text-align: center;
+       padding-top: 10px;
+       margin-right: 20px;
+     }
+     .left-content-footer ul li a{
+       color: #FB5849;
+     
+     }
+     
+     .middle-content-footer{text-align: center;}
+     .middle-content-footer a{}
+     .middle-content-footer a img{}
+     
+     .right-content-footer {
+       color: white;
+     }
+     .right-content-footer p {
+       padding: 0;
+       margin: 0;
+       text-align: right;
+     }
+     
+  
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
